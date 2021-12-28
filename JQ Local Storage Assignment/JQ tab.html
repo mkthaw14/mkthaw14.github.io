@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+    <link rel="script" href="../../fontawesome/js/all.min.js">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            padding: 15px;
+        }
+
+        div ul{
+            text-align: center;
+        }
+        div ul li{
+            display: inline-block;
+            padding: 12px;
+        }
+
+        div ul li a{
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+        }
+
+        div ul li a.active{
+            color: black;
+            border-bottom: 1px solid black;
+        }
+
+        div.content-header-grid{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 175px 500px 175px;
+        }
+
+        div.content-header-grid div h1{
+            color: white;
+        }
+
+        div.content-header-grid div{
+            /*border: 1px solid green;*/
+            padding: 10px 0px;
+            text-align: center;
+            background: black;
+        }
+
+        div.content-grid{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 850px;
+        }
+
+        div.content-grid div{
+            /*border: 1px solid green;*/
+        }
+
+        div.content-grid div p{
+            margin: 20px 0px;
+            margin-left: 47px;
+        }
+
+        div.grid-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        div.grid{
+            display: grid;
+            grid-template-columns: 175px 175px 175px 175px 175px 175px;
+            grid-column-gap: 30px;
+        }
+
+        div.grid div div img{
+            width: 175px;
+            height: 175px;
+        }
+
+
+        div.grid div h1{
+            font-size: 20px;
+            padding-top: 8px;
+        }
+
+        div.header-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        div.shop-header{
+            display: grid;
+            grid-template-columns: 175px 175px 175px 175px 175px 175px;
+            grid-auto-rows: 1fr;
+            grid-column-gap: 30px;
+            color: white;
+            background: black;
+        }
+
+        div.shop-header div{
+            text-align: center;
+            padding: 10px;
+            /*border: 1px solid green;*/
+        }
+
+        div.shop-header a{
+            color: white;
+            /*border: 1px solid red;*/
+            text-decoration: none;
+            padding-left: 60px;
+        }
+
+        div.shop-header a i{
+            font-size: 24px;
+        }
+
+        div.shop-header h1{
+            /*color: white;
+            padding-left: 30px;*/
+
+        }
+
+        div.cart-header{
+            /* background: black;
+            padding: 14px 0px;
+            color: white;
+            width: 905px; */
+            display: grid;
+            grid-template-columns: 200px 500px 45px 100px;
+            grid-column-gap: 20px;
+            background: black;
+            border-radius: 2px;
+        }
+
+        div.cart-header div{
+
+            text-align: center;
+            color: white;
+            padding: 10px 0px;
+        }
+
+        #cart-header-qty{
+            padding-top: 10px;
+
+        }
+
+        #cart-header-subtotal{
+            padding-top: 10px;
+        }
+
+        div.grid-cart {
+            display: grid;
+            grid-template-columns: 100px 600px 45px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        div.grid-cart div{
+            /*border: 1px solid green;*/
+        }
+
+        div.cart-img img{
+            height: 100px;
+            width: 100px;
+        }
+
+        div.cart-img, div.cart-qty, div.cart-price{
+            text-align: center;
+        }
+
+        div.cart-item-description{
+            padding-top: 25px;
+        }
+
+        div.cart-item-description h1{
+            font-size: 15px;
+        }
+
+        div.cart-qty{
+            padding-top: 70%;
+        }
+
+        div.cart-price{
+            padding-top: 35%;
+        }
+
+        div.cart-qty input{
+            width: 40px;
+            height: 30px;
+        }
+
+        div.cart-total{
+            display: flex;
+            justify-content: center;
+        }
+
+        div.cart-total-container{
+            display: grid;
+            grid-template-columns: 560px 100px 200px;
+            grid-column-gap: 20px;
+        }
+
+        div.cart-total-container div{
+            /*border: 1px solid green;*/
+        }
+
+        div.element-checkout{
+            text-align: center;
+
+        }
+
+        div.element-checkout button{
+            padding: 10px 20px;
+            color: white;
+            background: black;
+            border-radius: 2px;
+        }
+
+        div.element-total h3{
+            padding-top: 8px;
+            text-align: center;
+        }
+
+        div.cart-total h3{
+
+        }
+        
+        div.cart-total div{
+
+        }
+
+        #notification{
+            position: relative;
+            text-align: center;
+            background: red;
+            border-radius: 50px;
+            width: 24px;
+            display: inline-block;
+            right: 12px;
+            bottom: 10px;
+        }
+
+
+        #cartStatus{
+            padding-top: 20px;
+            font-size: 24px;
+        }
+
+        .atc{
+            position: relative;
+            bottom: 20px;
+            width: 75px;
+            height: 40px;
+            border-radius: 20px;
+            border: 0px;
+            color: white;
+            background: black;
+        }
+    </style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+    <script src="../jquery.min.js"></script>
+    <script src="JQ tab.js">
+
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home" class="link">Home</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+            <li><a href="#about" class="link">About</a></li>
+            <li><a href="#shop" class="link">Shop</a></li>
+
+        </ul>
+    </div>
+
+    <div class="content" id="home">
+        <div class="content-header-grid">
+            <div><h1>Home</h1></div>
+            <div><h1></h1></div>
+            <div><h1></h1></div>
+
+        </div>
+        <div class="content-grid">
+            <div>
+                <p>
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the 
+                    <br> visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be 
+                    <br> used as a placeholder before the final copy is
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="content" id="about">
+        <div class="content-header-grid">
+            <div><h1>About</h1></div>
+            <div><h1></h1></div>
+            <div><h1></h1></div>
+
+        </div>
+        <div class="content-grid">
+            <div>
+                <p>
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the 
+                    <br> visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be 
+                    <br> used as a placeholder before the final copy is
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="contact">
+        <div class="content-header-grid">
+            <div><h1>Contact</h1></div>
+            <div><h1></h1></div>
+            <div><h1></h1></div>
+
+        </div>
+        <div class="content-grid">
+            <div>
+                <p>
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the 
+                    <br> visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be 
+                    <br> used as a placeholder before the final copy is
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="shop">
+        <div class="header-container">
+            <div class="shop-header">
+                <div><h1>Shop</h1></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <div>
+                        <a href="#cart" class="link"><i class="fas fa-shopping-cart"></i> <span id="notification"></span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid">
+                <div>
+                    <div>
+                        <img src="../Images/ps5.jpeg" alt="">
+                        <button class="atc" data-id="1" data-name="Sony PlayStation 5 Disc Version Console with The Division 2, Destiny 2 and Headphone" data-price="999.99" data-imgPath="../Images/ps5.jpeg">+Add</button>
+                    </div>
+                    <h1>$999.99</h1>
+                    <span>Sony PlayStation 5 Disc Version Console with The Division 2, Destiny 2 and Headphone</span>
+                </div>
+                <div>
+                    <div>
+                        <img src="../Images/switch game1.png" alt="">
+                        <button class="atc" data-id="2" data-name="Animal Crossing: New Horizons - Nintendo Switch" data-price="57.99" data-imgPath="../Images/switch game1.png">+Add</button>
+                    </div>
+                    <h1>$57.99</h1>
+                    <span>Animal Crossing: New Horizons - Nintendo Switch</span>
+                </div>
+                <div>
+                    <div>
+                        <img src="../Images/nintendo switch.jpeg" alt="">
+                        <button class="atc" data-id="3" data-name="Nintendo Switch™ with Neon Blue & Neon Red Joy-Con + 12 Month Individual Membership Online + Carrying Case" data-price="378.99" data-imgPath="../Images/nintendo switch.jpeg">+Add</button>
+                    </div>
+                    <h1>$378.99</h1>
+                    <span>Nintendo Switch™ with Neon Blue & Neon Red Joy-Con + 12 Month Individual Membership Online + Carrying Case</span>
+                </div>
+                <div>
+                    <div>
+                        <img src="../Images/xbox series x.jpeg" alt="">
+                        <button class="atc" data-id="4" data-name="Xbox Series X Video Game Console, Black" data-price="837.75" data-imgPath="../Images/xbox series x.jpeg">+Add</button>
+                    </div>
+                    <h1>$837.75</h1>
+                    <span>Xbox Series X Video Game Console, Black</span>
+                </div>
+                <div>
+                    <div>
+                        <img src="../Images/xbox series s.jpeg" alt="">
+                        <button class="atc" data-id="5" data-name="2020 New Xbox 512GB SSD Console - White Xbox Console and Wireless Controller" data-price="354.95" data-imgPath="../Images/xbox series s.jpeg">+Add</button>
+                    </div>
+                    <h1>$354.95</h1>
+                    <span>2020 New Xbox 512GB SSD Console - White Xbox Console and Wireless Controller</span>
+                </div>
+                <div>
+                    <div>
+                        <img src="../Images/xbox wireless controller.jpeg" alt="">
+                        <button class="atc" data-id="6" data-name="Xbox Wireless Controller - Shock Blue" data-price="59.99" data-imgPath="../Images/xbox wireless controller.jpeg">+Add</button>
+                    </div>
+                    <h1>$59.99</h1>
+                    <span>Xbox Wireless Controller - Shock Blue</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="cart">
+
+
+        <!--<table border="1" cellspacing="0" cellpadding="10" width="100%" style="margin-bottom: 10px;">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>-->
+
+
+
+        <div class="header-container">
+            <div class="cart-header">
+                <div>
+                    <h1>Your Cart</h1>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <h3 id="cart-header-qty">Qty</h3>
+                </div>
+                <div>
+                    <h3 id="cart-header-subtotal">Subtotal</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-container">
+            <h3 id="cartStatus">Your cart is empty</h3>
+            <div class="grid-cart">
+
+            </div>
+
+        </div>
+
+        <div class="cart-total">
+            <div class="cart-total-container">
+
+        </div>
+    </div>
+</body>
+</html>
