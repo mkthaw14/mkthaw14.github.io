@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="inputbox">
+                <input type="text" id="userinput" disabled="disabled">
+            </div>
+            <div class="grid">
+                <div id="plus"><button onclick="prepareForCalculation(' + ');">+</button></div>
+                <div id="minus"><button onclick="prepareForCalculation(' - ');">-</button></div>
+                <div id="multiplier"><button onclick="prepareForCalculation(' * ');">*</button></div>
+                <div id="equal"><button onclick="prepareForCalculation('=');">=</button></div>
+
+                <div id="division"><button onclick="prepareForCalculation(' / ');">/</button></div>
+                <div id="seven"><button onclick="registerNumber('7');">7</button></div>
+                <div id="eight"><button onclick="registerNumber('8');">8</button></div>
+                <div id="nine"><button onclick="registerNumber('9');">9</button></div>
+
+                <div id="four"><button onclick="registerNumber('4');">4</button></div>
+                <div id="five"><button onclick="registerNumber('5');">5</button></div>
+                <div id="six"><button onclick="registerNumber('6');">6</button></div>
+                <div id="one"><button onclick="registerNumber('1');">1</button></div>
+
+                <div id="two"><button onclick="registerNumber('2');">2</button></div>
+                <div id="three"><button onclick="registerNumber('3');">3</button></div>
+                <div id="zero"><button onclick="registerZero();">0</button></div>
+                <div id="decimal"><button onclick="registerDecimal();">.</button></div>
+
+                <div id="AC"><button onclick="reset();">AC</button></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js">
+
+    </script>
+</body>
+</html>
