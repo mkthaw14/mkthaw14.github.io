@@ -1,0 +1,39 @@
+@font-face{
+	font-family: 'Caveat';
+	src:url('../fonts/Caveat-VariableFont_wght.ttf');
+}
+
+@font-face{
+	font-family: 'Poppins_Black';
+	src:url('../fonts/Poppins-Black.ttf');
+}
+
+@font-face{
+	font-family: 'Poppins_Bold';
+	src:url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'Poppins_ExtraBold';
+	src:url('../fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face{
+	font-family: 'Poppins_Regular';
+	src:url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'WorkSans_Regular';
+	src:url('../fonts/WorkSans-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'WorkSans_Bold';
+	src:url('../fonts/WorkSans-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'WorkSans_SemiBold';
+	src:url('../fonts/WorkSans-SSemiBold.ttf');
+}
