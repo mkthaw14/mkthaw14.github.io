@@ -1,0 +1,21 @@
+.margin_1{
+    border: 1px solid blue;
+    margin: 15px;
+    /*all four T R B L */
+}
+
+.margin_2{
+    border: 1px solid red;
+    margin: 10px 2%;
+    /*top and bottom / right and left*/
+}
+
+.margin_3{
+    border: 1px solid black;
+    margin: 10px 5px 15px;
+}
+
+.margin_4{
+    border: 1px solid black;
+    margin: 10px 5px 20px 10px;
+}

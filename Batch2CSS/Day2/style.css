@@ -1,0 +1,49 @@
+/*id selector. please make a habit of writing tab's name infront of # sign*/
+p#idSelector{
+    color: red;
+    letter-spacing: 30px;
+}
+h2{
+    text-align: center;
+    color: red;
+}
+.class_1{
+    color: green;
+    text-indent: 30px;
+}
+
+/*Decendent Selector. affect all 'a' tag */
+p.desc a{
+    color: yellow;
+}
+
+/*Child Selector. 'a' tab must not be any child except the 'p' tab*/
+p.child > a{
+    color: green;
+}
+
+/*Sudo Selector*/
+a:link{
+    color:red;
+}
+
+a:hover{
+    color: blue;
+}
+a:active{
+    color: green;
+}
+a:visited{
+    color: brown;
+}
+
+/*Target*/
+div:target{
+    color: green;
+    border: 1px solid black;
+}
+
+/*Student Register day 3*/
+
+
+/* Student Register Day 3 */

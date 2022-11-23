@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Condition IF Else</h1>
+    <script>
+
+        function ShowTotalPrice(){
+            var unitPrice = 200;
+            var quantity = parseInt(prompt("Enter quantity"));
+            if(quantity >= 100){
+                unitPrice = 180;
+
+            }
+            var total = quantity * unitPrice;
+            alert(`Total price for ${quantity} is ${total}`);
+        }
+
+        function even_odd(){
+            var num = parseInt(prompt("Enter a number"));
+            if(num % 2 == 0){
+                alert(` ${num} is Even`);
+            }
+            else{
+                alert(` ${num} is Odd`);
+            }
+        }
+
+
+        function check_num(){
+            var num = parseInt(prompt("Enter a number"));
+
+            if(num > 0)
+            {
+                alert(`${num} is Positive`);
+            }
+            else if(num < 0){
+                alert(`${num} is Negative`);
+            }
+            else{
+                alert(`${num} is Zero`);
+            }
+        }
+
+        check_num();
+        //even_odd();
+    </script>
+</body>
+</html>

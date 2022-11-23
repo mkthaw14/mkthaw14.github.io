@@ -1,0 +1,17 @@
+h2{
+    text-align: center;
+}
+
+div.float_left img{
+    float: left; 
+    width: 40%;
+}
+
+div.clear{
+    clear: both;
+}
+
+div.float_right img{
+    float: right;
+    width: 40%;
+}

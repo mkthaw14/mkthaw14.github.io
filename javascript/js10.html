@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Variable Scope</h1>
+    <script>
+        //var /let / const
+        // var is global scope
+
+        function var_logic()
+        {
+            console.log(`var logic`);
+            var myNumber = 5;
+            console.log(`First Num`, myNumber);
+            var i = 1;
+            if(i < 10){
+                var myNumber = 6;
+                console.log(`Inside Block`, myNumber);
+            }
+            console.log(`Outside`, myNumber);
+            var myNumber = 10;
+            console.log(`Final`, myNumber);
+        }
+
+        //let variable logic
+        function let_logic()
+        {
+            console.log(`let logic`);
+            
+            let myNumber = 5;
+
+            console.log(`First Num`, myNumber);
+            let i = 1;
+            if(i < 10)
+            {
+
+                let myNumber = 6;
+
+                console.log(`Inside Block`, myNumber);
+            }
+            console.log(`Outside`, myNumber);
+
+            myNumber = 10;
+
+            console.log(`Final`, myNumber);
+        }
+
+        // const variable
+        function const_logic(){
+            console.log(`const logic`);
+            const PI = 3.14;
+            console.log(PI);
+            
+            const student_obj = {
+                name : "Mg Mg",
+                age : "24",
+                city : "Yangon"
+            }
+
+            console.log(student_obj);
+            student_obj.name = "Thaw";
+            console.log(student_obj);
+        }
+        var_logic();
+        let_logic();
+        const_logic();
+    </script>
+</body>
+</html>

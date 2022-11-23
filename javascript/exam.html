@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <label for="subject1">Subject1</label>
+    <input type="number" id="subject1"> <br>
+
+    <label for="subject2">Subject2</label>
+    <input type="number" id="subject2"> <br>
+
+    <label for="subject3">Subject3</label> 
+    <input type="number" id="subject3"> <br>
+    <button onclick="show()">Calculate</button> <br>
+    Total : 
+    <label id="total"></label> <br>
+    <label id="result"></label>
+
+    <script>
+        function show()
+        {
+            var sub1 = parseInt(document.getElementById("subject1").value);
+            var sub2 = parseInt(document.getElementById("subject2").value);
+            var sub3 = parseInt(document.getElementById("subject3").value);
+
+            var sum = sub1 + sub2 + sub3;
+
+            console.log(sub1, sub2, sub3);
+
+            // if(sub1 >= 40 && sub2 >= 40 && sub3 >= 40)
+            // {
+            //     var result = "Passed";
+
+            // }
+            // else{
+            //     var result = "Failed";
+            // }
+
+            if(sub1 < 40 || sub2 < 40 || sub3 < 40)
+            {
+                var result = "Failed";
+            }
+            else 
+            {
+                var result = "Passed";
+                if(sub1 >= 80 || sub2 >= 80 || sub3 >= 80)
+                {
+                    result = "Passed with destinction";
+                }
+            }
+
+            document.getElementById("result").innerHTML = result;
+
+        }
+    </script>
+</body>
+</html>

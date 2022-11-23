@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS While Loop</h2>
+    <script>
+        let num = 100;
+        while(num > 30){
+            document.write(`<br> ${num}`);
+            num -= 4;
+        }
+
+        document.write(`<br> Outside of While ${num}`);
+
+        let total = 0;
+        let myNumber = 1;
+        while(myNumber <= 100){
+            total += myNumber;
+            myNumber++;
+        }
+        document.write(`<br> <br> Sum of 1 to 100 is : ${total}`);
+
+        function multiply(){
+            let ans = parseInt(prompt("Enter a number for Multiplication table"));
+            let i = 1;
+
+            document.write(`<br> ${ans} multiplication table! <br>`);
+            while(i <= 12){
+                let a = ans * i;
+                document.write(` <br> ${ans} * ${i} = ${a} <br>`);
+                i++;
+            }
+        }
+
+        //sum of numbers input by users
+        // ask for counts => 3 => ask for 3 times
+
+        let count = parseInt(prompt(`Enter number count !`));
+        let sumTotal = 0;
+
+        while(count > 0){
+            let num = parseInt(prompt(`Enter Number`));
+            sumTotal += num;
+            count--;
+            document.write(`<br> Number is : ${num}`);
+        }
+
+        document.write(` <br> Sum of Numbers: ${sumTotal}`);
+    </script>
+</body>
+</html>

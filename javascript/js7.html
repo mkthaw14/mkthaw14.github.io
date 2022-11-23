@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loop</title>
+</head>
+<body>
+    <h1>JS Loop</h1>
+    <script>
+        for(let i = 0; i <= 10; i++)
+        {
+            document.write(`<h1> ${i} Hello World </h1>`);
+        }
+        //1. i = 1 / 1 <= 10/ do / i++ => i = 2
+        //2. i = 2 / 2 <= 10/ do / i++ => i = 3
+        //3. i = 3 / 3 <= 10/ do / i++ => i = 4
+        //..
+        //..
+        //10. i = 10 / do / i++ => i = 11
+        //condition false so the loop is terminated
+
+        //sum of 1 to 100
+
+        function Sum()
+        {
+            let total = 0;
+            let count = parseInt(prompt("How many number would you like to add?"));
+    
+            for(let num = 1; num <= count; num++)
+            {
+                total += num;
+            }
+
+            document.write(`Sum of 1 to ${count} : ${total}`);
+        }   
+
+        //Factorial
+
+        function factorial()
+        {
+            let factorial = 1;
+            let ans = parseInt(prompt("Enter factorial"));
+            for(let x = 1; x <= ans; x++)
+            {
+                factorial *= x;
+            }
+
+            document.write(`<br> ${ans}! is ${factorial}`);
+        }
+
+
+        //multiplication table
+
+        function multiply()
+        {
+            let num = parseInt(prompt("Enter a number for multiplication table"));
+            for(let y = 1; y <= 10; y++)
+            {
+                if(y == 9)
+                { 
+                    //break;
+                    document.write(`<br> `);
+                    continue;
+                }
+
+                let multiplication = num * y;
+                document.write(`<br> ${num} * ${y} = ${multiplication}`);
+            }
+        }
+
+        /*
+                *   *   *
+                *   *   *
+                *   *   *
+        */
+
+        //print three stars at a row
+
+        function printStars()
+        {
+            for(let i = 1; i <= 5; i++)
+            {
+                for(let y = 1; y <= i; y++)
+                {
+                    document.write(` * `);
+                }
+                document.write(`<br>`);
+            }
+        }
+
+
+        //Call functions here
+        //multiply();
+        printStars();
+
+        let showNumber = 1;
+        document.write('<table border = "1" cellpadding = "10">');
+            for(let i = 1; i <= 10; i++){
+                document.write('<tr>');
+
+                    for(let j = 1; j <= 10; j++){
+                        document.write(`<td> ${showNumber++} </td>`);
+                    }
+
+                document.write('</tr>');
+            }
+        document.write('</table>');
+
+        /*
+            1
+            2 3
+            4 5 6
+            7 8 9 10
+            11 12 13 14 15
+            16 17 18 19 20 21
+        */
+
+        let row = parseInt(prompt("How many row do you want?"));
+        let num = 1;
+        for(let x = 1; x <= row; x++){
+            for(let y = 1; y <= x; y++){
+                document.write(`${num++} `);
+            }
+
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+</html>

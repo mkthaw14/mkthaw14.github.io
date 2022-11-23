@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Operator</h1>
+    <script>
+        // arithmetic operators (+, -, *, %, /, =)
+        // binary operators
+        // unary operator (!, ++, --);
+        var single = true;
+        console.log(!single);
+        var passed = false;
+        console.log(!passed);
+
+        var myNumber = 2;
+
+
+        
+        console.log(myNumber++); // increment after log
+        console.log(myNumber);
+        console.log(++myNumber); // increment before log
+
+        var numToDecrease = myNumber--; // assign value before decreasing then decrease value
+        console.log("numToDecrease " + numToDecrease);
+
+        var numToDecrease = --myNumber;
+        console.log(numToDecrease);
+        // ternary operator (? :)
+        
+        var coffee = 450;
+        var tea = 500;
+        var result = (coffee > tea) ? "Yes" : "No"
+        console.log(result);
+
+        //logical operators
+        var firstNum = parseInt(prompt("Enter first number"));
+        var secondNum = parseInt(prompt("Enter second number"));
+        var sum = firstNum + secondNum;
+        console.log(` Sum of ${firstNum} and ${secondNum} is ${sum}`);
+
+        var thirdNumber = parseInt(prompt("Enter third Num "));
+        var average = (firstNum + secondNum + thirdNumber) / 3;
+        console.log(` Average of ${firstNum} , ${secondNum} and ${thirdNumber} is ${average.toFixed(2)}`); 
+    </script>
+</body>
+</html>

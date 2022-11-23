@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+.logo{
+    height: 70px;
+    width: 110px;
+    margin-left: 30px;
+    display: block;
+}
+.brand_name{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-family: great vibes;
+}
+.nav_background{
+    background-color: #16191c;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.nav_background ul{
+    float: right;
+}
+.nav_background ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+
+    text-transform: uppercase;
+}
+
+.nav_background ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_background ul li:hover{
+
+    transform: translate(4px, -5px);
+    transition-duration: 0.3s;
+}
+
+.nav_background ul li a:hover{
+    color: yellow;
+
+}
+
+
+.banner-content h1{
+    color: gold;
+    font-size: 60px;
+}
+
+.banner-content{
+
+    margin-top: 130px;
+    margin-left: 130px;
+}
+
+form{
+    display: flex;
+
+}
+input[type="search"]{
+    margin-top: 30px;
+    padding: 5px 10px;
+    width: 500px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+input[type="search"]:focus{
+    border: 3px solid yellow;
+}
+
+form button{
+    background: transparent;
+    border: none;
+    margin-left: -35px;
+    margin-top: 35px;
+}
+
+form button img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+}
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/shopIMG/cover8.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+@font-face {
+    font-family: great vibes;
+    src: url(../GreatVibes/GreatVibes-Regular.ttf);
+}
+
+div.section-1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 350px 350px 350px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    width: 80%;
+    margin: 40px auto 30px;
+}
+
+div.image{
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.image img{
+    width: 180px;
+    height: 180px;
+    background: black;
+
+}
+
+div.content{
+    border: 1px solid rgb(168, 166, 166);
+
+}
+
+div.content:hover{
+    border: 1px solid gold;
+}
+
+div.desc{
+    margin-top: 20px;
+
+}
+div.desc p{
+    width: 180px;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+div.desc h5{
+    margin-top: 7px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: rgb(90, 90, 90);
+}
+
+.section-2{
+    background: black;
+    padding: 30px 0 30px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    color: gold;
+}
+
+
+.section-2-sub1{
+    text-align: center;
+}
+
+.section-2-sub1 button{
+    width: 250px;
+    height: 40px;
+    margin-top: 15px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.section-2-sub2 ul{
+    padding-left: 40px;
+}
+
+.section-2-sub2 ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.section-2-sub2 ul li a{
+    color: white;
+    text-decoration: none;
+}

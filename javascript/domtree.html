@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Tree</title>
+</head>
+<body>
+    <h3>DOM Tree</h3>
+    <div id="main">
+        <div id="sudbdiv1">
+            <p>First Child</p>
+            <p>First Child Second Paragrah</p>
+        </div>
+        <div id="subdiv2">
+            <p>Second Child</p>
+            <p>Second Child Second Paragraph</p>
+        </div>
+    </div>
+
+    <script>
+        let maindiv = document.getElementById("main");
+        //console.log(maindiv.childNodes[0].childNodes[0].innerHTML);
+        //console.log(maindiv.firstChild.childNodes[1].innerHTML);
+        //console.log(maindiv.lastChild.childNodes[3].innerHTML);
+        //console.log(maindiv.firstChild.nextSibling);
+    </script>
+</body>
+</html>

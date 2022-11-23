@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student List Table</h1>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>No.</th>
+            <td>Name</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mg Mg</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mg Aung</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Mg Koo</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>StudentID</td>
+            <td>StudentPassword</td>
+        </tr>
+        <tr>
+            <td>std883</td>
+            <td>08896778</td>
+        </tr>
+        <tr>
+            <td>std100</td>
+            <td>7343535</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Name</td>
+                <td>Photo</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mg A</td>
+                <td><img src="images/4.jpg" alt="" width="50" height="50"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mg Th</td>
+                <td><img src="images/1.jpg" alt="" width="50" height="50"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ma Aye</td>
+                <td><img src="images/2.png" alt="" width="50" height="50"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>4</td>
+                <td>Mg Kaut</td>
+                <td><img src="images/3.jpg" alt="" width="50" height="50"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <table border="4" cellpadding= "30">
+        <thead>
+            <tr>
+                <td>StudentID</td>
+                <td>Password</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Std97</td>
+                <td>67909</td>
+            </tr>
+            <tr>
+                <td>Std676</td>
+                <td>57088</td>
+            </tr>
+            <tr>
+                <td>Std577</td>
+                <td>567854</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Std665</td>
+                <td>232433</td>
+            </tr>
+            <tr>
+                <td>Std456</td>
+                <td>342333</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Your order sheet</h1>
+    <table border="2" cellpadding="20">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Coffee</td>
+                <td><input type="number" id="coffeeQuantity"> </td>
+                <td><label for="" id="coffeePrice">3</label><label for="">$</label></td>
+                <td><label for="" id="coffeeTotal"></label><label for="">$</label></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Banana</td>
+                <td><input type="number" id="bananaQuantity"> </td>
+                <td><label for="" id="bananaPrice">5</label><label for="">$</label></td>
+                <td><label for="" id="bananaTotal"></label><label for="">$</label></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Apple Juice</td>
+                <td><input type="number" id="juiceQuantity"> </td>
+                <td><label for="" id="juicePrice">6</label><label for="">$</label></td>
+                <td><label for="" id="juiceTotal"></label><label for="">$</label></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Grand Total</td>
+                <td rowspan="2"><label for="" id="grandTotal"></label></td>
+            </tr>
+            <tr>
+                <td colspan="4"> Total  </td>
+            </tr>
+        </tfoot>
+        <p> </p>
+    </table>
+
+    <h1>Nested Table</h1>
+    <table border="2" cellpadding="20" cellspacing= "20">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table border="1" cellpadding="20">
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <table border="1" cellpadding= "10">
+        <tr style="background-color: yellow;">
+            <td>
+                Cell1
+            </td>
+            <td colspan="2">
+                Cell2
+            </td>
+        </tr>
+        <tr style = "background-color: red;">
+            <td>
+                Cell 3
+            </td>
+            <td rowspan="2">
+                Cell 4
+            </td>
+            <td>
+                Cell 5
+            </td>
+        </tr>
+        <tr style="background-color: green;">
+            <td>
+                Cell 6
+            </td>
+            <td>
+                Cell 7
+            </td>
+        </tr>
+    </table>
+
+    <script>
+
+        var grandTotal = 0;
+        DisplayTotal("coffeePrice", "coffeeQuantity", "coffeeTotal");
+        DisplayTotal("bananaPrice", "bananaQuantity", "bananaTotal");
+        DisplayTotal("juicePrice", "juiceQuantity", "juiceTotal");
+
+        function DisplayTotal(price, quantity, subTotal)
+        {
+            var Subtotal = parseInt(document.getElementById(subTotal).value);
+            var Price = parseInt(document.getElementById(price).innerHTML);
+            var Quantity = parseInt(document.getElementById(quantity).value)
+            let result = Price * Quantity;
+            document.getElementById(subTotal).innerHTML = result;
+            //coffeeTotal.innerHTML = "666"; 
+            console.log(price + " " + Price);
+            console.log(quantity + " " + Quantity);
+            alert(document.getElementById(subTotal).innerHTML);
+            CalculateAll(result);
+        }
+    
+        function CalculateAll(subTotal){
+            grandTotal += subTotal;
+            document.getElementById("grandTotal").innerHTML = grandTotal + "$";
+            console.log("GrandTotal " + grandTotal);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+    <style>
+        .blue{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h4 id="myh4" class="blue"></h4>
+    <h3 id="myh3" class="blue">JS <i>DOM</i> </h3>
+
+    <p class="blue">This is Paragraph</p>
+    <p>This is another Paragraph</p>
+
+    <input type="email" name="email" id=""> <br>
+
+    <button onclick="show()">Click Me</button>
+
+    <script>
+        function show(){
+            //get element by name
+            let myemail = document.getElementsByName("email");
+            console.log(myemail[0].value);
+            //get element by ID
+            let myh3 = document.getElementById("myh3");
+            console.log(myh3.innerText); //innerText get text value , innerHTML get the whole html codes
+            myh3.innerHTML = "<i>Changed!</i>";
+
+            //get element by Tag Name
+            let ptags = document.getElementsByTagName('p');
+            console.log(ptags[0]);
+            ptags[0].style.color = "red";
+            ptags[1].innerHTML = "Changed Paragraph";
+            
+            //get elements by class name
+            let myblue = document.getElementsByClassName("blue");
+            console.log(myblue[2].innerHTML);
+            myblue[0].innerHTML = myblue[1].innerHTML + myblue[2].innerHTML;
+        }
+    </script>
+</body>
+</html>

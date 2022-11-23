@@ -1,0 +1,86 @@
+form{
+    width: 80%;
+
+    margin: auto;
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+    width: 100%;
+    border: 2px solid #ccc;
+    background-color: grey;
+    padding: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus{
+    border: 4px solid blue;
+}
+
+div.dob_select{
+    width: 90%;
+}
+
+div.dob_select select{
+    width: 30%;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+#Address{
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:enabled + label{
+    color: yellow;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label{
+    color: blue;
+    font-style: normal;
+}
+
+input[type="checkbox"]:disabled + label{
+    color: red;
+}
+
+.rule_fieldset legend{
+    color: white;
+    background-color: brown;
+    margin: 30px 0px;
+}
+
+ul li{
+    width: 80%;
+    margin-left: 9px;
+}
+
+li:first-child{
+    background-color: yellow;
+}
+li:last-child{
+    background-color: blue;
+}
+
+li:nth-child(5){
+    background-color: green;
+}
+
+p:empty{
+    background-color: white;
+    height: 20px;
+}
+
+p.thankyou{
+    text-align: center;
+}

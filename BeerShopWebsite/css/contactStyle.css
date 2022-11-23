@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+.logo{
+    height: 70px;
+    width: 110px;
+    margin-left: 30px;
+    display: block;
+}
+.brand_name{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-family: Great_vibes;
+}
+.nav_background{
+    background-color: #16191c;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.nav_background ul{
+    float: right;
+}
+.nav_background ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+
+    text-transform: uppercase;
+}
+
+.nav_background ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_background ul li:hover{
+
+    transform: translate(4px, -5px);
+    transition-duration: 0.3s;
+}
+
+.nav_background ul li a:hover{
+    color: yellow;
+
+}
+
+.section-1{
+    color: white;
+}
+
+.map{
+    float: left;
+    position: relative;
+    top: 50px;
+}
+
+.form-content{
+    position: absolute;
+    left: 800px;
+    top: 150px;
+}
+
+.form-content form{
+    margin-top: 20px;
+}
+
+.form-content form label{
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"]{
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    border: 3px solid yellow;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.form-content form select{
+    width: 200px;
+    height: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-content h3{
+    margin-top: 20px;
+}
+
+.form-content p{
+    margin-top: 20px;
+}
+
+.section-2{
+    padding: 30px 0 30px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    color: gold;
+    background-color: black;
+}
+
+
+.section-2-sub1{
+    text-align: center;
+}
+
+.section-2-sub1 button{
+    width: 250px;
+    height: 40px;
+    margin-top: 15px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.section-2-sub2 ul{
+    padding-left: 40px;
+}
+
+.section-2-sub2 ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.section-2-sub2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+
+}
+
+
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/shopIMG/area51_2.jpg);
+    height: 650px;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Great_vibes;
+    src: url(../GreatVibes/GreatVibes-Regular.ttf);
+}

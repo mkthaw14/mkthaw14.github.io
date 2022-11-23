@@ -1,0 +1,12 @@
+.onlinefont{
+    font-family:  'Open Sans', sans-serif;
+}
+
+@font-face {
+    src: url(OpenSan/OpenSans-Bold.ttf);
+    font-family: a;
+}
+
+.offlinefont{
+    font-family: a;
+}

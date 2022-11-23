@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>JS Image Slider</h4>
+    <img src="rocket.jpg" id="myimg" onmouseenter="big()" onmouseout="normal()" 
+    width="200" height="150">
+
+    <script>
+        var myimg;
+        var w;
+        var h;
+
+        setUp();
+
+        function setUp(){
+            myimg = document.getElementById("myimg");
+            w = myimg.style.width;
+            h = myimg.style.height;
+        }
+        function big(){
+            //let pict = document.getElementById("myimg");
+            myimg.style.width = "400px";
+            myimg.style.height = "600px";
+        }
+
+        function normal(){
+            myimg.style.width = w;
+            myimg.style.height = h;
+            change();
+        }
+
+        function change(){
+            //console.log(myimg.src);
+            let mysrc = myimg.getAttribute("src");
+            console.log(mysrc);
+
+            if(mysrc == "rocket.jpg"){
+                myimg.src = "rocket2.jpg";
+            }
+            else if(mysrc == "rocket2.jpg"){
+                myimg.src = "rocket3.jpg";
+            }
+            else{
+                myimg.src = "rocket.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

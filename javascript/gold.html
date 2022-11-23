@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gold Calculator</h1>
+    <label for="gram"> Gram </label>
+    <input type="number" step="0.01" id="gram" > <br>
+    <label for="kpy"> Kyat-Pae-Yway</label>
+    <input type="text" id="kpy"> <br>
+    <label for="goldPrice"> Gold Price </label>
+    <input type="number" id="goldPrice"> <br>
+    <label for="wearingPrice"> Wearing Price</label>
+    <input type="number" id="wearingPrice"> <br>
+    <button onclick="show()"> Calculate </button>
+
+    <script>
+        function show(){
+            //1. accept input
+            //accept data from id gram using DOM
+            let gram = parseFloat(document.getElementById("gram").value);
+            console.log(gram);
+
+            //2. calculate
+            let kyatValue = calculate(gram, 16.6, "/");
+            console.log(kyatValue);
+            let kyat = kyatValue[0]; //we got kyat from index 0
+
+            let paeValue = calculate(kyatValue[1], 16, "*"); // use index 1 to calculate
+            console.log(paeValue);
+            let pae = paeValue[0]; // we got pae from index 0
+
+            let ywayValue = calculate(paeValue[1], 8, "*"); // use index 1 to calculate
+            console.log(ywayValue);
+            let yway = ywayValue[0]; // we got yway from index 0
+            document.getElementById("kpy").value = kyat + "-"+pae+ "-" +yway;
+            //3. show kpy
+
+            let goldPrice = parseInt(document.getElementById("goldPrice").value);
+            console.log(goldPrice);
+            let wearingPrice = goldPrice * (kyat + pae/16 + yway/128);
+            document.getElementById("wearingPrice").value = wearingPrice.toFixed(0);
+        }
+
+        function calculate(firstNumber, secondNumber, operation){
+            //accept two numbers and operation (/ or *)
+            if(operation == "/"){
+                let intPart = parseInt(firstNumber / secondNumber);
+                let floatPart = (firstNumber / secondNumber) - intPart;
+                return [intPart, floatPart];
+            }
+            else{
+                let intPart = parseInt(firstNumber * secondNumber);
+                let floatPart = (firstNumber * secondNumber) - intPart;
+                return [intPart, floatPart];
+            }
+        }
+        /*
+            1. g -> kpy
+            domain knowledge => 
+            1 kyat = 16.6 g
+            1 kyat = 16 pae
+            1 pae = 8 yway
+
+            20g => k p y
+            1 gram/ 16.6 = kyat.pae
+              .pae * 16 = pae.yway
+              .yway * 8 = yway;
+              
+              1 kyat => 16 pae => 8 yway
+            wearingPrice =  goldPrice * (kyat + pae/16 + yway/128);
+        */       
+    </script>
+</body>
+</html>

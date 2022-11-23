@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Do while</h2>
+
+    <script>
+        let x = 1;
+        let total = 0;
+
+        do{
+            total += x;
+            x++;
+        } while(x <= 100)
+        document.write(`Sum of 1 to 100 : ${total}`);
+
+        //ask user to enter number if he want to add more
+        //show total sum
+
+        let sumTotal = 0;
+        do{
+            let num = parseInt(prompt(`Enter a number to Add!`));
+            document.write(`<br> Number : ${num}`);
+            sumTotal += num;
+
+            var ans = confirm(`Wanna add more?`);
+        } while(ans == true)
+
+        document.write(`<br> Sum total is : ${sumTotal}`);
+
+        
+    </script>
+</body>
+</html>

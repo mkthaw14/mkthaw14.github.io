@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 70px;
+    width: 110px;
+    margin-left: 30px;
+    display: block;
+}
+.brand_name{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-family: Great_vibes;
+}
+.nav_background{
+    background-color: #16191c;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.nav_background ul{
+    float: right;
+}
+.nav_background ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+
+    text-transform: uppercase;
+}
+
+.nav_background ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_background ul li:hover{
+
+    transform: translate(4px, -5px);
+    transition-duration: 0.3s;
+}
+
+.nav_background ul li a:hover{
+    color: yellow;
+
+}
+
+.background{
+    background-image: url(../images/background.jpg);
+    height: 650px;
+}
+
+.beerbar{
+    color: gold;
+    position: absolute;
+    left: 370px;
+    top: 300px;
+    font-size: 40px;
+}
+.fontstyle{
+    font-family: Great_vibes;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+@font-face {
+    font-family: Great_vibes;
+    src: url(../GreatVibes/GreatVibes-Regular.ttf);
+}
+
+div.grid_body{
+    display: grid;
+    grid-template-columns: 600px auto auto;
+}
+
+div.grid_body div{
+    background-color: black;
+    border: 2px solid grey;
+    color: white;
+    padding: 15px;
+}
+
+div.grid_body div:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 50px;
+}
+
+div.grid_body div:nth-child(1) p{
+    margin-top: 20px;
+}
+div.gridOther{
+    text-align: center;
+}
+
+div.grid_body div h3{
+    text-transform: uppercase;
+    color: gold;
+}
+
+.readmore{
+    margin-top: 20px;
+    padding: 10px 15px 10px;
+    border-radius: 8px;
+    background-color: gold;
+}
+
+.beerImg{
+    height: 350px;
+    width: 450px;
+    margin-left: 70px;
+    margin-top: 40px;
+    border: 1px solid black;
+    float: left;
+}
+
+.boxshowText{
+    position: relative;
+    top: 120px;
+    left: 100px;
+    width: 85%;
+    text-align: justify;
+}
+
+.boxshowText h2{
+    color: gold;
+}
+
+.boxshowText p{
+    margin-top: 10px;
+}
+
+.clear{
+    clear: both;
+
+    background: blue;
+
+}
+.clear-2{
+    clear: both;
+}
+
+.midSection{
+    margin-top: 20px;
+
+    padding: 30px;
+    background-color: black;
+
+}
+
+.midSection img{
+    float: right;
+    width: 600px;
+    height: 300px;
+
+    position: relative;
+    bottom: 270px;
+    right: 170px;
+}
+
+.midSection div{
+    color: white;
+    width: 30%;
+    text-align: justify;
+    padding: 30px 0px 10px 40px ;
+
+}
+
+.midSection div h2{
+    color: gold;
+    font-size: 30px;
+}
+
+.midSection div p{
+    margin-top: 10px;
+}
+
+.midSection div button{
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: gold;
+}
+
+.section-4{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-column-gap: 40px;
+    width: 60%;
+
+    margin: 50px 120px 0px;
+    position: absolute;
+    text-align: justify;
+}
+
+.section-4 div h2{
+    color:gold;
+}
+.section-4-text-1{
+
+}
+
+.section-4-text-2{
+
+}
+
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.footer ul{
+    margin-right: 40px;
+}
+.footer ul li{
+    display:  inline-block;
+    margin-right: 20px;
+}
+
+.designer{
+    color: gold;
+}

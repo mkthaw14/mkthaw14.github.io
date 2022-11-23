@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 70px;
+    width: 110px;
+    margin-left: 30px;
+    display: block;
+}
+.brand_name{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-family: Great_vibes;
+}
+.nav_background{
+    background-color: #16191c;
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.nav_background ul{
+    float: right;
+}
+.nav_background ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+
+    text-transform: uppercase;
+}
+
+.nav_background ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_background ul li:hover{
+
+    transform: translate(4px, -5px);
+    transition-duration: 0.3s;
+}
+
+.nav_background ul li a:hover{
+    color: yellow;
+
+}
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/shopIMG/internal2.jpg);
+    height: 550px;
+    background-size: cover;
+}
+
+.beerbar{
+    color: gold;
+    position: absolute;
+    left: 370px;
+    top: 300px;
+    font-size: 40px;
+}
+.fontstyle{
+    font-family: Great_vibes;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+.section-2{
+    padding: 10px;
+    text-align: center;
+}
+
+.section-2-sub1{
+    width: 70%;
+    margin: 40px auto 40px;
+}
+
+.section-2-sub1 p{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 15px 10px;
+    border-radius: 8px;
+    background-color: gold;
+}
+
+.section-3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/shopIMG/breweryinternal-1.jpg);
+    height: 550px;
+    background-size: cover;
+    color: white;
+}
+
+.section-3-sub1{
+    width: 40%;
+    font-size: 20px;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.section-3-sub1 h1{
+    line-height: 40px;
+}
+.section-3-sub1 p{
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.footer{
+    padding: 30px 0 30px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    color: gold;
+    background-color: black;
+}
+
+
+.footer-sub1{
+    text-align: center;
+}
+
+.footer-sub1 button{
+    width: 250px;
+    height: 40px;
+    margin-top: 15px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.footer-sub2 ul{
+    padding-left: 40px;
+}
+
+.footer-sub2 ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.footer-sub2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.content h1{
+    margin-top: 30px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: Great_vibes;
+    src: url(../GreatVibes/GreatVibes-Regular.ttf);
+}

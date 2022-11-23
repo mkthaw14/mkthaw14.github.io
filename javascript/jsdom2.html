@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM2</title>
+</head>
+<body>
+    <h3>JS DOM2</h3>
+    <label id="mytext"></label> <br>
+    <button id="mybtn">Click Me</button>
+
+    <script>
+        let mybtn = document.getElementById("mybtn");
+        mybtn.onclick = show;
+        function show(){
+            //alert("hi");
+            //document.getElementById("mytext").innerHTML = "Hello DOM!";
+            document.querySelector("#mytext").innerHTML = "Hello DOOM!";
+        }
+    </script>
+</body>
+</html>

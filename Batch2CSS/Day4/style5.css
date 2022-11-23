@@ -1,0 +1,33 @@
+div.grid_1 div, div.grid_2 div, div.grid_3 div, div.grid_4 div, div.grid_5 div, div.grid_6 div{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_2{
+    grid-column-gap: 40px; /*makes space between grid columns*/
+}
+
+.grid_3{
+    grid-row-gap: 20px; /*makes space between grid rows*/
+}
+.grid_4{
+    grid-gap: 20px; /*makes space between both rows and columns*/
+}
+
+.grid_5 .three{
+    grid-column-start: 1; /*merge columns from given start to end*/
+    grid-column-end: 3;
+}
+.grid_6 .one{
+    grid-row-start: 1;  /*merge rows from given start to end*/
+    grid-row-end: 3;
+}
+h2{
+    text-align: center;
+}

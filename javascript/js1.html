@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Variable data type</h1>
+    <script>
+        var firstNumber = 5; //This is assignment operator "="
+        document.write(firstNumber);
+        var secondNumber = 20; //Assigns value
+        var thirdNumber = firstNumber + secondNumber; //Add two numbers
+        document.write( "<br> Sum of 5 and 20 : " + thirdNumber); // concatenation
+
+        
+        var fouthNum = thirdNumber - secondNumber;
+        document.write(" <br> fourthNum " + fouthNum);
+
+        var fithNum = firstNumber * fouthNum;
+        document.write("<br> fithNum " + fithNum);
+
+        var sixthNum = firstNumber/ secondNumber;
+        document.write( "<br> 5 divided by 20 : " + sixthNum);
+
+        var seventhNum = firstNumber % secondNumber;
+        document.write("<br> Modulus of  " + firstNumber.toString() + " by " + secondNumber.toString() + " : " + seventhNum);
+
+        var firstName = "Min";
+        var lastName = "Thaw";
+        document.write("<br> Name " + firstName + " " + lastName);
+
+        console.log(typeof(firstName));
+        console.log(typeof(lastName));
+        var fullName = firstName + " " + lastName;
+        console.log(fullName);
+
+        var authenicate = false;
+        if(fullName == "Min Thaw"){
+            authenicate = true;
+            console.log(authenicate);
+        }
+        if(authenicate){
+            console.log("Login success");
+            //Do something
+        }
+
+        var something = null;
+        if(something == null){
+            //Warm and Terminate the application
+            console.log("something is null please assign the value : " + something);
+        }
+
+        var fruitArray = ["apple, orange, mango"];
+        console.log(typeof(fruitArray)); 
+
+        var studentArray = ["Mg Thaw", 23];
+
+        var age = studentArray[1];
+        if(age > 20){
+            console.log(age);
+        }
+
+        var studenObject = {
+            name: "Thaw",
+            age : 29,
+            height : 1.7,
+            city : "Yangon"
+        }
+
+        console.log(studenObject.name);
+        console.log(studenObject.height);
+        console.log(studenObject);
+        console.log(studenObject["height"]);
+            
+        var item1={
+            name: "apple",
+            price: 100,
+            stock: 5
+        }
+        var item2={
+            name: "orangle",
+            price: 120,
+            stock: 4
+        }
+
+        var item = [item1, item2];
+
+        console.log(item[0].stock);
+
+        var item3={
+            name: "orangle",
+            price: 120,
+            stock: 4
+        }
+
+        item.push(item3);
+        console.log(item[2]);
+        //var itemArr = [item1, item2];
+        //console.log(itemArr[0]);
+    </script>
+</body>
+</html>

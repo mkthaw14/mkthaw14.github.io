@@ -1,0 +1,24 @@
+h4{
+    
+    color: rgb(150, 130, 220);
+    /*color: blue;*/
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+p{
+    word-spacing: 15px;
+    line-height: 50px;
+}
+
+/* Universal Selector */
+*{
+
+    background-color: silver;
+    margin: 0px;
+    padding: 0px;
+}
+
+a[target="_blank"]{
+    text-decoration: none;
+}

@@ -1,0 +1,47 @@
+h2{
+    text-align: center;
+    color: red;
+}
+
+.borderone{
+    border: 1px dashed red;
+}
+
+.bordertwo{
+    border-top: 3px dashed blue;
+}
+
+.borderthree{
+    border: 2px solid yellow;
+    border-radius: 20px ;
+}
+
+.borderstyle{
+    border-style: ridge;
+}
+
+.bordermix{
+    /*top right bottom left*/
+    border-style: solid dashed double dotted;
+    /*top and bottom / left and right*/
+    border-style: solid double;
+    /*top / L and R / Bottom */
+    border-style: solid double dotted;
+}
+
+
+.borderW-1{
+    border-style:  solid;
+    border-width: thin;
+}
+
+.borderW-2{
+    border-style: solid;
+    border-width: 10px
+}
+
+.borderW-3{
+    border-style: solid;
+    /* top right bottom left*/
+    border-width: 4px 10px 10px 4px;
+}

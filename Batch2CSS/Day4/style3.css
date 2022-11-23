@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+}
+
+a.inlineElement{
+    border: 1px solid black;
+    width: 600px;
+    display: inline-block;/*without it you cann't change height width of the element*/
+}
+
+.blockElement{
+    border: 1px solid green;
+    width: 600px;
+    display: inline-block;
+}
